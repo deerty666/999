@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100d0a">
+<meta name="description" content="ديرتي - نكهة تجمعنا">
+<title>ديرتي | نكهة تجمعنا</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+:root {
+  --gold: #d6ad69;
+  --gold2: #f3d9a6;
+  --ink: #100d0a;
+  --cream: #fff8eb;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 25px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cairo', Tahoma, Arial, sans-serif;
+  color: var(--cream);
+  background:
+    radial-gradient(ellipse at 50% 8%, rgba(180,125,54,.22), transparent 42%),
+    linear-gradient(145deg,#0b0907,#1b140e 52%,#0c0a08);
+}
+
+.card {
+  width: min(100%,460px);
+  text-align: center;
+  padding: 34px 25px 27px;
+  border: 1px solid rgba(214,173,105,.48);
+  border-radius: 29px;
+  background: linear-gradient(155deg,#2b2016,#130f0b 65%);
+  box-shadow: 0 28px 90px rgba(0,0,0,.58);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border: 1px solid rgba(214,173,105,.13);
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.topline {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.logo {
+  width: 92px;
+  height: 92px;
+  margin: auto auto 13px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: grid;
+  place-items: center;
+  background: rgba(214,173,105,.08);
+  box-shadow: 0 0 30px rgba(214,173,105,.15);
+}
+
+.logo span {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--gold2);
+}
+
+h1 {
+  font-size: 39px;
+  margin: 0;
+  color: var(--gold2);
+  font-weight: 900;
+}
+
+.slogan {
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.intro {
+  margin: 19px auto 25px;
+  color: #c5b7a2;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.rule {
+  height: 1px;
+  width: 75%;
+  margin: 0 auto 23px;
+  background: linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity: .4;
+}
+
+.choose {
+  font-size: 13px;
+  color: #e8d7bd;
+  margin-bottom: 14px;
+}
+
+.actions {
+  display: grid;
+  gap: 13px;
+}
+
+.action {
+  min-height: 63px;
+  padding: 12px 17px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  transition: .2s;
+  position: relative;
+  z-index: 1;
+}
+
+.action:active {
+  transform: scale(.98);
+}
+
+.primary {
+  color: #21170d;
+  background: linear-gradient(115deg,#f2d9a7,#d2a45d,#bd8844);
+  box-shadow: 0 9px 25px rgba(190,137,67,.22);
+}
+
+.secondary {
+  color: var(--gold2);
+  border: 1px solid rgba(214,173,105,.62);
+  background: rgba(214,173,105,.07);
+}
+
+.action-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+.action-copy small {
+  font-size: 10px;
+  opacity: .75;
+}
+
+.ico {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.note {
+  margin-top: 20px;
+  color: #a99a84;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.footer {
+  margin-top: 24px;
+  color: #8e806d;
+  font-size: 11px;
+}
+
+@media(max-width:380px) {
+  .card { padding: 28px 18px; }
+  h1 { font-size: 35px; }
+  .action { font-size: 15px; }
+}
+</style>
+</head>
+
+<body>
+
+<main class="card">
+
+  <div class="topline">مطاعم ومطابخ</div>
+
+  <div class="logo">
+    <span>د</span>
+  </div>
+
+  <h1>ديرتي</h1>
+  <p class="slogan">نكهة تجمعنا</p>
+
+  <p class="intro">
+    يا مرحبا بك في ديرتي
+    <br>
+    كل اللي تشتهيه صار أقرب لك
+    <br>
+    اختر طريقتك وابدأ طلبك
+  </p>
+
+  <div class="rule"></div>
+
+  <p class="choose">كيف تحب تزورنا؟</p>
+
+  <div class="actions">
+
+    <!-- زر تحميل التطبيق -->
+    <a class="action primary"
+       href="https://play.google.com/store/apps/details?id=com.deerty.app"
+       target="_blank" rel="noopener">
+
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M5 3.8c-.6.4-1 1.1-1 2v12.4c0 .9.4 1.6 1 2l8-8.2L5 3.8Z"/>
+        <path d="m14.1 10.5 3-3.1-9.9-5.1c-.8-.4-1.6-.2-2.2.2l9.1 8Z"/>
+        <path d="m14.1 13.5-9.1 8c.6.4 1.4.6 2.2.2l9.9-5.1-3-3.1Z"/>
+        <path d="m18.2 8.1-3.1 3.2 3.1 3.2 2.1-1.1c1.2-.6 1.2-1.6 0-2.2l-2.1-1.1Z"/>
+      </svg>
+
+      <span class="action-copy">
+        تحميل تطبيق ديرتي
+        <small>اطلب بسهولة من جوالك</small>
+      </span>
+
+    </a>
+
+    <!-- زر الموقع -->
+    <a class="action secondary"
+       href="https://deerty666.github.io/"
+       target="_blank" rel="noopener">
+
+      <svg class="ico" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor"
+           stroke-width="1.8" stroke-linecap="round">
+
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M3.5 9h17M3.5 15h17"/>
+        <path d="M12 3c2.2 2.4 3.2 5.4 3.2 9s-1 6.6-3.2 9c-2.2-2.4-3.2-5.4-3.2-9s1-6.6 3.2-9Z"/>
+
+      </svg>
+
+      <span class="action-copy">
+        تصفح الموقع والمنيو
+        <small>شاهد الأصناف والأسعار</small>
+      </span>
+
+    </a>
+
+  </div>
+
+  <p class="note">
+    امسح رمز QR مرة واحدة
+    <br>
+    ثم اختر الخدمة المناسبة لك
+  </p>
+
+  <div class="footer">
+    سحايب ديرتي · حياكم الله
+  </div>
+
+</main>
+
+</body>
+</html>
